@@ -1,0 +1,281 @@
+/* MOBILE AND GLOBAL STYLES */
+
+
+/* applies to screens smaller than 500px (first breakpoint) */
+
+
+/* and above unless overwritten below */
+
+/* Colour Pallete */
+/* #265077 */
+/* #022140 */
+/* #494B68 */
+/* #1E4258 */
+/* #2D5F5D */
+/* #66B7B4 */
+/* #CBEF43 */
+
+@font-face {
+  font-family: TitleFont;
+  src: url("../fonts/carbono/carbono_pw.ttf");
+}
+
+@font-face {
+  font-family: Code_Style;
+  src: url("../fonts/fira_code/firaCode-variablefont.ttf");
+}
+
+@font-face {
+  font-family: MainFont;
+  src: url("../fonts/sfpro/sfprodisplay-semibold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: MainFont;
+  color: #eeeeee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #022140;
+}
+
+.page {
+  margin-top: 5vh;
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 20vh;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding-top: 25px;
+  margin: 0 auto;
+}
+
+#banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #1e4258 ;
+}
+
+#banner > *{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#banner:hover{
+  filter: drop-shadow(0px 0px 10px #CBEF43);
+  transition: all 0.2s ease-in;
+
+}
+
+a {
+  text-decoration: none;
+  color:#fff;
+  transition: all 0.2s ease-in;
+}
+
+a:hover {
+  color: #2D5F5D;
+  text-shadow:0px 0px 30px #2D5F5D;
+  transition: all 0.2s ease-in;
+}
+
+#personal_icon {
+  display: inline-block;
+  justify-content: flex-start;
+  height: 70px;
+  width: 70px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#personal_icon:hover {
+
+  filter: drop-shadow(0px 0px 1px #494B68);
+  transform: scale(1.05);
+  cursor: pointer;
+
+}
+
+span {
+  color: #CBEF43;
+}
+
+.activebtn {
+  border-width: thin;
+  border-style: solid;
+  border-color: #2D5F5D;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 100;
+  color: #2D5F5D;
+  cursor: pointer;
+  background-color: inherit;
+  height: 60px;
+  width: 47%;
+  outline: none;
+  border-radius: 5px;
+}
+
+.activebtn:hover {
+  background-color: #CBEF43;
+}
+
+.page_title {
+
+  padding-top: 20px;
+  display: block;
+  font-size: 45px;
+  color: #eeeeee;
+  text-align: center;
+  width: 100%;
+}
+
+.page_title span {
+  font-size: 10px;
+  padding-right: 5px;
+}
+
+
+.mainArticle {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}
+
+.mainArticle li::marker{
+
+ color: #2D5F5D;
+ display: inline-block;
+ width: 1em;
+ margin-left: -1em;
+
+}
+
+H2 {
+  margin-top: 20px;
+  margin-bottom: 8px;
+
+}
+
+img{
+  width: 90%;
+  height: 90%;
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 85%;
+  top: 100%;
+  margin-top: 4px;
+  background-color: #494b68;
+  color: #022140;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16%;
+  margin-top: 16%;
+}
+
+.contact h1{
+  color: #CBEF43;
+}
+
+.contact h1:hover{
+  filter: drop-shadow(1px 1px 10px #2D5F5D);
+}
+
+.contact button{
+  margin-top: 5%;
+}
+
+.contact-header>* {
+  text-align: center;
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+
+/****************************************/
+
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+  /* applies to screens wider than 499px */
+
+  li a {
+    font-size: 15px;
+  }
+  .activebtn {
+    width: 30%;
+  }
+
+
+
+}
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+  /* applies to screens wider than 999px */
+
+  .activebtn {
+    width: 20%;
+  }
+
+  .page_title {
+    font-size: 55px;
+    margin-bottom: 1%;
+  }
+
+}
